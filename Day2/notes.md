@@ -113,20 +113,3 @@ class Test {
     }
 }
 ```
-
-
----
-
-If you want, I can also generate:
-
-📁 Folder structure for GitHub  
-📘 A clean **Day 2 README section update**  
-📝 Day 3 Notes template  
-🎨 A Day 2 infographic  
-
-Just tell me!
-
-
-
-
-
