@@ -12,7 +12,7 @@ JDK is the complete toolkit required for developing Java applications.
 
 ### Flow for Developers:
 1. Write code  
-2. Compile using ``  
+2. Compile using `javac`  
 3. Run using `java`
 
 ---
