@@ -4,7 +4,7 @@ import com.Test2;
 import com.pradeep.*;
 
 public class Test {
-
+    // Variables
     int a = 10;
     int b = 20;
 
