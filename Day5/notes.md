@@ -138,3 +138,13 @@ public class PrimitiveDataTypes {
         System.out.println("Is Java Fun? " + isJavaFun);
     }
 }
+```
+
+---
+
+## ✅ Summary of Day 5
+- Naming convention improves readability & maintainability
+- Java requires type declarations → strictly typed language
+- Primitive types differ in memory, range & precision
+- Understanding fundamental datatypes is essential for real-time coding
+- Example program practiced in class
