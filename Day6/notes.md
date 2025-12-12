@@ -105,6 +105,7 @@ public class ArithmeticOperators {
         System.out.println(num1 + num2 + 5);
 
         num1 = 15;
+
         int num3 = num1 + num2 + 10;
         System.out.println(num3);
 
