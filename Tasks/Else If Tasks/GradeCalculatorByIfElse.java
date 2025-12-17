@@ -2,7 +2,7 @@ package com.ifelsetask;
 
 import java.util.Scanner;
 
-public class GradeCalculator {
+public class GradeCalculatorByIfElse {
 	public static void main(String[] args) {
 		System.out.println("--- Grade Calculator using If-Else ---");
 		Scanner sc = new Scanner(System.in);
