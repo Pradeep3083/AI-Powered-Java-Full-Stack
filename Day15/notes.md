@@ -1,74 +1,129 @@
-Day 15 Notes:
+# Day 15 – Strings in Java (String Constant Pool & Methods)
 
-Strings:
+## 📌 Overview
+Day 15 focused on **Strings in Java**, one of the most important and frequently asked interview topics.
+The session covered **how strings are created, where they are stored in memory, why strings are immutable**, and **commonly used String methods**.
 
-Group of Characters
+---
 
-2 ways
-1. Literals
-	String s = "Pradeep";
+## 🔤 What is a String?
+- A **String** is a *group of characters*.
+- In Java, `String` is a **non-primitive data type**.
+- Internally, `String` is a **predefined class** from the `java.lang` package.
 
-2. Object
-	Classname Objname  new classname();
+---
 
-	String s = new String("Pradeep");
+## 🧱 Ways to Create a String
 
+### 1️⃣ Using String Literals
+```java
+String s = "Pradeep";
+```
+- Stored in **String Constant Pool (SCP)**
+- Same value → same memory reference
 
-MM -> Methods -> Static, Metadata
-	
+### 2️⃣ Using `new` Keyword
+```java
+String s = new String("Pradeep");
+```
+- Stored in **Heap memory**
+- Always creates a new object, even if value is same
 
-All Objects are stored in Heap.
+---
 
-In Heap
-String Constant Pool in Java
+## 🧠 Memory Management (Important)
+- **Stack** → Local variables
+- **Heap** → Objects
+- **String Constant Pool (SCP)** → Special memory area inside Heap for string literals
 
-String s = "Pradeep"; // this will be stored in String Constant Pool which is in special 
-
-
-
-String Constant Pool:
-
-s1 = "Pradeep";
-s2 = "Pradeep";
-s3 = "Pradeep";
-These 3 refers to only one Pradeep
-
-s4 = "Pradeep Sai";
-
-s3 = "PradeepSai";// It will allocate new string
-
-s2 = "G Pradeep";
-
-s1 = "G Pradeep Sai";
-
-
+Example:
+```java
 String s1 = "Pradeep";
-		String s2 = "Pradeep Sai";
-		
-		System.out.println(s1);
-		System.out.println(s2);
-		s1 = "Pradeep Sai";
-		System.out.println(s1); // Here it will create a new one and where "Pradeep" will be in the background only
-		// After the GC will collect it.
-		
+String s2 = "Pradeep";
+```
+➡️ Both `s1` and `s2` point to the **same object** in SCP.
 
-String is immutable class in java
+---
 
-next notes soon...
+## 🔒 String Immutability
+Strings in Java are **immutable**.
 
+```java
+String s = "Pradeep";
+s = "Pradeep Sai Lakshman Guniganti";
+```
 
+- A **new String object** is created
+- Old value remains in memory until **Garbage Collector** removes it
 
+---
 
+## ⚖️ `==` vs `equals()`
 
+| Operator / Method | Purpose |
+|------------------|---------|
+| `==` | Compares memory reference |
+| `equals()` | Compares content |
 
+Example:
+```java
+System.out.println(s1 == s2);      // false
+System.out.println(s1.equals(s2)); // true
+```
 
+👉 Always use `equals()` to compare string values.
 
+---
 
+## 🛠️ Commonly Used String Methods
 
+- `length()`
+- `charAt()`
+- `equals()`
+- `equalsIgnoreCase()`
+- `contains()`
+- `indexOf()`
+- `lastIndexOf()`
+- `startsWith()`
+- `endsWith()`
+- `toUpperCase()`
+- `toLowerCase()`
+- `trim()`
+- `isEmpty()`
+- `isBlank()`
+- `concat()`
+- `compareTo()`
+- `replace()`
+- `substring()`
 
+---
 
+## 🧪 Important Observations
+- `trim()` removes leading and trailing spaces
+- `isEmpty()` checks length == 0
+- `isBlank()` checks only whitespace
+- `compareTo()` compares lexicographically
+- `substring()` extracts part of a string
 
+---
 
+## 🧠 Key Learnings
+- Strings are immutable
+- SCP improves memory efficiency
+- `==` and `equals()` behave differently
+- Strings are heavily used in interviews and real-world applications
+- Understanding memory behavior is crucial for Java developers
 
+---
 
+## 💡 Interview Tips
+✔ Know **String Constant Pool**  
+✔ Explain **immutability clearly**  
+✔ Always mention `equals()` vs `==`  
+✔ Be comfortable with common String methods  
 
+---
+
+## 🚀 Conclusion
+Strings may look simple, but they involve **deep memory concepts**.
+Understanding how Java handles strings internally gives a strong foundation for **Core Java, interviews, and backend development**.
