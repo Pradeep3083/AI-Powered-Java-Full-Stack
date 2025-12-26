@@ -1,6 +1,47 @@
 package com.strings;
 
 public class Test {
+    public static void main(String[] args) {
+
+        // String creation using literals
+        String s1 = "Pradeep";
+        String s2 = "Pradeep Sai Lakshman Guniganti";
+
+        System.out.println(s1);
+        System.out.println(s2);
+
+        // String immutability
+        s1 = "Pradeep Sai Lakshman Guniganti";
+        System.out.println(s1);
+        // Old "Pradeep" remains in String Constant Pool until GC removes it
+
+        // Case sensitivity
+        String s3 = "PradeepSaiLakshmanGuniganti";
+        String s4 = "pradeepsailakshmanguniganti";
+
+        // String creation using new keyword
+        String s5 = new String("Pradeep");
+        String s6 = new String("Pradeep");
+        // These are stored in heap with different memory locations
+
+        // Reference comparison
+        System.out.println(s1 == s2);
+        System.out.println(s3 == s4);
+        System.out.println(s5 == s6);
+
+        // Content comparison
+        System.out.println(s5.equals(s6));
+        // Always use equals() to compare string values
+    }
+}
+
+
+
+/*
+
+package com.strings;
+
+public class Test {
 	public static void main(String[] args) {
 		String s1 = "Pradeep";
 		String s2 = "Pradeep Sai";
@@ -27,11 +68,7 @@ public class Test {
 		
 		System.out.println(s5.equals(s6)); // true
 		// for comparing string we have to use .equals() method
-		
-		
-		
-		
-		
-		
 	}
 }
+
+*/
