@@ -1,18 +1,61 @@
+package com.casting;
+
 public class ImplicitTypeCasting {
     public static void main(String[] args) {
 
         byte b = 10;
-        short s = b;
-        int i = s;
-        long l = i;
-        float f = l;
-        double d = f;
+        System.out.println("byte: " + b);
 
-        System.out.println("Byte value: " + b);
-        System.out.println("Short value: " + s);
-        System.out.println("Int value: " + i);
-        System.out.println("Long value: " + l);
-        System.out.println("Float value: " + f);
-        System.out.println("Double value: " + d);
+        short s = b;      // byte to short
+        System.out.println("short: " + s);
+
+        int i = s;        // short to int
+        System.out.println("int: " + i);
+
+        long l = i;       // int to long
+        System.out.println("long: " + l);
+
+        float f = l;      // long to float
+        System.out.println("float: " + f);
+
+        double d = f;     // float to double
+        System.out.println("double: " + d);
+
+        // char to int (Unicode)
+        char ch = 'A';
+        int ascii = ch;
+        System.out.println("Unicode of A: " + ascii);
     }
 }
+
+
+
+
+
+
+
+/*
+public class ImplicitTypeCasting {
+	public static void main(String[] args) {
+		
+		
+		float num5 = 100.234f;
+		
+		double num6 = 100244.23456;
+		
+		double num7 = num6;
+		
+		char c = '5';
+		
+		// ASCII = American Standard Code for Information Interchange
+		// 128 charcaters 
+		// Unicode support around 65536 characters
+		int num8 = c;
+		System.out.println(c);
+		System.out.println(num8);
+		
+		System.out.println('A'+1);		
+		
+	}
+}
+*/
