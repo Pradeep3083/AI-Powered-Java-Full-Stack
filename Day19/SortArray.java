@@ -10,7 +10,7 @@ public class SortArray {
 		}
 		
 		for(int i=0;i<arr.length-1;i++) {
-			for(int j=0;j<arr.length-1;j++) {
+			for(int j=0;j<(arr.length-1-i);j++) {
 				if(arr[j]>arr[i]) {
 					int temp = arr[j];
 					arr[j] = arr[j+1];
@@ -24,7 +24,7 @@ public class SortArray {
 		System.out.println("After Sorting: ");
 		for(int num : arr) {
 			System.out.print(num+" ");
-		}		
+		}
 		
 	}
 }
