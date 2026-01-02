@@ -1,9 +1,10 @@
 package com.programs;
 
+import java.util.Arrays;
+
 public class SortArray {
 	public static void main(String[] args) {
 		int[] arr = {10,2,12,11,8};
-		
 		System.out.println("Before Sorting: ");
 		for(int num : arr) {
 			System.out.print(num+" ");
@@ -18,13 +19,9 @@ public class SortArray {
 				}
 			}
 		}
-		
 		System.out.println();
-		
 		System.out.println("After Sorting: ");
-		for(int num : arr) {
-			System.out.print(num+" ");
-		}
+		System.out.println(Arrays.toString(arr));
 		
 	}
 }
