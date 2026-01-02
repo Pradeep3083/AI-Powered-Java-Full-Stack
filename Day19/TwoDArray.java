@@ -1,0 +1,36 @@
+package com.twodarrays;
+
+import java.util.Arrays;
+
+public class TwoDArray {
+	public static void main(String[] args) {
+		int[][] arr = new int[3][3];
+		
+		arr[0][0] = 10;
+		arr[0][1] = 20;
+		arr[0][2] = 18;
+		
+		arr[1][0] = 70;
+		arr[1][1] = 40;
+		arr[1][2] = 34;
+		
+		arr[2][0] = 53;
+		arr[2][1] = 25;
+		//arr[2][2] = 19;
+		
+		System.out.println(arr[1][2]);
+		System.out.println(arr[2][2]);
+		
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr[i].length;j++) {
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+		for(int[] val : arr) {
+			System.out.println(Arrays.toString(val));
+		}
+		
+	}
+}
