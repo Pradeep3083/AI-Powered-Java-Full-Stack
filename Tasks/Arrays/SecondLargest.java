@@ -8,12 +8,14 @@ public class SecondLargest {
 		int largest = arr[0];
 		int secondLargest = arr[0];
 		
+		// First pass: find largest
 		for(int i=1;i<arr.length;i++) {
 			if(arr[i] > largest) {
 				largest = arr[i];
 			}
 		}
 		
+		// Second pass: find second largest
 		for(int i=0;i<arr.length;i++) {
 			if(arr[i]!=largest) {
 				if(secondLargest == largest || arr[i] > secondLargest) {
