@@ -17,8 +17,8 @@
 Polymorphism means **one method with many behaviors**.
 
 Java supports two types of polymorphism:
-1. Compile-Time Polymorphism
-2. Run-Time Polymorphism
+1. Compile-Time Polymorphism (Method Overloading)
+2. Run-Time Polymorphism (Method Overriding)
 
 ---
 
