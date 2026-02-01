@@ -1,4 +1,4 @@
-
+// Parent Class
 class Parent {
 	int a = 10;
 	void m1() {
@@ -6,6 +6,7 @@ class Parent {
 	}
 }
 
+// Child Class
 class Child extends Parent{
 	int b = 20;
 	
@@ -16,14 +17,13 @@ class Child extends Parent{
 	
 	void m2() {
 		System.out.println("Child m2()");
-	}
-	
+	}	
 }
 
 public class DynamicMethodDispatch {
 	public static void main(String[] args) {
-		Parent p = new Child();
-		
+		// Parent refernce
+		Parent p = new Child();		
 		p.m1();
 		System.out.println(p.a);
 		
